@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using Unity.VisualScripting;
 
 public class Bandit : MonoBehaviour {
 
@@ -17,6 +18,7 @@ public class Bandit : MonoBehaviour {
     public float attackRange = 0.5f;
     public LayerMask enemyLayers;
 
+    public HealthBar healthBar;
 
     public int attackDamage = 1;
     public int maxHealth = 6;
@@ -31,6 +33,7 @@ public class Bandit : MonoBehaviour {
         m_body2d = GetComponent<Rigidbody2D>();
         m_groundSensor = transform.Find("GroundSensor").GetComponent<Sensor_Bandit>();
         currentHealth = maxHealth;
+        healthBar.SetHealth(maxHealth);
     }
 	
 	// Update is called once per frame
@@ -133,6 +136,8 @@ public class Bandit : MonoBehaviour {
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
+
+        healthBar.SetHealth(currentHealth);
 
         m_animator.SetTrigger("Hurt");
 
