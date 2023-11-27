@@ -455,7 +455,7 @@ GameObject:
   - component: {fileID: 647013869}
   - component: {fileID: 647013868}
   - component: {fileID: 647013870}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Health
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -547,6 +547,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 1463392086428580, guid: 3248535f6a2562c489a1223a75951ef2, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 4588935210562790, guid: 3248535f6a2562c489a1223a75951ef2, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -597,7 +601,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 114999745408315450, guid: 3248535f6a2562c489a1223a75951ef2, type: 3}
       propertyPath: enemyLayers.m_Bits
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -621,7 +625,7 @@ GameObject:
   - component: {fileID: 887258793}
   - component: {fileID: 887258795}
   - component: {fileID: 887258794}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Red
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -698,7 +702,7 @@ GameObject:
   - component: {fileID: 898435305}
   - component: {fileID: 898435304}
   - component: {fileID: 898435307}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Healthbar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -844,11 +848,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1689866831511430, guid: 2e2183501755a214591e802f3aff33d2, type: 3}
       propertyPath: m_Layer
-      value: 3
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1689866831511430, guid: 2e2183501755a214591e802f3aff33d2, type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 1943394156383696, guid: 2e2183501755a214591e802f3aff33d2, type: 3}
       propertyPath: m_Layer
-      value: 3
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4805181885227780, guid: 2e2183501755a214591e802f3aff33d2, type: 3}
       propertyPath: m_RootOrder
@@ -908,7 +916,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 895680593030830612, guid: 2e2183501755a214591e802f3aff33d2, type: 3}
       propertyPath: m_Layer
-      value: 3
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3994348652490465240, guid: 2e2183501755a214591e802f3aff33d2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1197,7 +1205,7 @@ GameObject:
   - component: {fileID: 1331654549}
   - component: {fileID: 1331654551}
   - component: {fileID: 1331654550}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Red
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1274,7 +1282,7 @@ GameObject:
   - component: {fileID: 1370231073}
   - component: {fileID: 1370231072}
   - component: {fileID: 1370231075}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Healthbar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1920,7 +1928,7 @@ GameObject:
   - component: {fileID: 1719870718}
   - component: {fileID: 1719870720}
   - component: {fileID: 1719870719}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Border
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2063,7 +2071,7 @@ GameObject:
   - component: {fileID: 1802073370}
   - component: {fileID: 1802073372}
   - component: {fileID: 1802073371}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Health
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2143,7 +2151,7 @@ GameObject:
   - component: {fileID: 2129406604}
   - component: {fileID: 2129406606}
   - component: {fileID: 2129406605}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Border
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2212,6 +2220,8 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 519420032}
+  - {fileID: 723646881}
+  - {fileID: 1118551979}
   - {fileID: 1567680797}
   - {fileID: 1382382347}
   - {fileID: 51618434}
@@ -2220,6 +2230,4 @@ SceneRoots:
   - {fileID: 1650499683}
   - {fileID: 150725483}
   - {fileID: 1158693043}
-  - {fileID: 723646881}
-  - {fileID: 1118551979}
   - {fileID: 1743319652}
