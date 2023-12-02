@@ -1,6 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 using Unity.VisualScripting;
+using UnityEngine.SceneManagement;
+using System.Threading.Tasks; 
+    
 
 public class Bandit : MonoBehaviour {
 
@@ -133,7 +136,7 @@ public class Bandit : MonoBehaviour {
         Gizmos.DrawWireSphere(attackPoint.position, attackRange);
     }
 
-    public void TakeDamage(int damage)
+    public async void TakeDamage(int damage)
     {
         currentHealth -= damage;
 
@@ -144,6 +147,8 @@ public class Bandit : MonoBehaviour {
         if(currentHealth <= 0)
         {
             Die();
+            await Task.Delay(5000);     //waits 5 seconds then loads the main menu 
+            SceneManager.LoadScene("Start Menu"); //builds and loads the next scene
         }
     }
 
@@ -152,7 +157,7 @@ public class Bandit : MonoBehaviour {
         m_animator.SetTrigger("Death");
         Debug.Log("Enemy died!");
         m_isDead = true;
-        this.enabled = false;
+        this.enabled = false; 
     }
 
 
