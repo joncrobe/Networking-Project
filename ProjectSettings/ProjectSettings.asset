@@ -101,7 +101,7 @@ PlayerSettings:
   xboxEnableFitness: 0
   visibleInBackground: 1
   allowFullscreenSwitch: 1
-  fullscreenMode: 3
+  fullscreenMode: 1
   xboxSpeechDB: 0
   xboxEnableHeadOrientation: 0
   xboxEnableGuest: 0
@@ -701,11 +701,11 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   activeInputHandler: 0
   windowsGamepadBackendHint: 0
-  cloudProjectId: 63a8eac6-8c2b-4bc2-b979-ec55c36a5499
+  cloudProjectId: ea4d90e4-aeda-4a94-8667-b82aaba1804f
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: Networking Project (1)
-  organizationId: ryanhursst
+  projectName: Networking Project
+  organizationId: joncrobe
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   hmiLoadingImage: {fileID: 0}
