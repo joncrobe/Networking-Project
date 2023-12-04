@@ -2,10 +2,11 @@
 using System.Collections;
 using Unity.VisualScripting;
 using UnityEngine.SceneManagement;
-using System.Threading.Tasks; 
-    
+using System.Threading.Tasks;
+using Unity.Netcode;
 
-public class Bandit : MonoBehaviour {
+
+public class Bandit : NetworkBehaviour {
 
     [SerializeField] float      m_speed = 4.0f;
     [SerializeField] float      m_jumpForce = 7.5f;
@@ -41,6 +42,7 @@ public class Bandit : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        if (!IsOwner) return;
 
         if(Time.time >= nextAttackTime)
         {
